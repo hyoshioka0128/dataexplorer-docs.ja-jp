@@ -40,7 +40,7 @@ Azure Kusto Logic App コネクタを使用すると、 [Microsoft Logic app](ht
     * ログ分析のオン/オフ
 1. **[Review + create]\(レビュー + 作成\)** を選択します。
 
-    ![ロジック アプリを作成する](./Images/logicapps/logicapp-create-new.png)
+    ![Logic Apps を作成する](./Images/logicapps/logicapp-create-new.png)
 
 1. ロジックアプリが作成されたら、[**編集**] を選択します。
 
