@@ -34,9 +34,9 @@ Kafka Connect は、Apache Kafka と他のシステムとの間でスケーラ�
  
 ### <a name="bundle"></a>バンドル
 
-Kafka は、カスタム コネクタの役割を果たすプラグインとして `.jar` を読み込むことができます。 そのような `.jar` を生成するために、ここではローカルにコードを複製し、Maven を使用してビルドします。 
+Kafka は、カスタム コネクタの役割を果たすプラグインとして `.jar` を読み込むことができます。 そのような `.jar` を生成するために、ここではローカルにコードをクローンし、Maven を使用してビルドします。 
 
-#### <a name="clone"></a>複製
+#### <a name="clone"></a>クローン
 
 ```bash
 git clone git://github.com:Azure/kafka-sink-azure-kusto.git
@@ -112,9 +112,9 @@ Kafka からのデータの送信先となるテーブルを ADX に作成しま
 
 Kafka クラスターが ADX に接続されたら、ダウンロードした[サンプル アプリ](https://github.com/Azure-Samples/event-hubs-dotnet-ingest)を使用してデータを生成します。
 
-### <a name="clone"></a>複製
+### <a name="clone"></a>クローン
 
-サンプル アプリをローカルに複製します。
+サンプル アプリをローカルにクローンします。
 
 ```cmd
 git clone git://github.com:Azure/azure-kusto-samples-dotnet.git
