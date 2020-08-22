@@ -39,7 +39,7 @@ Kusto クエリ言語ツールは、Python アルゴリズムの開発とデバ�
 
             ![Web UI がインライン python ファイルをダウンロードします](media/debug-inline-python/webui-inline-python.png)
 
-        1. *debug_python.py* を右クリックし、VS コードで開きます。 
+        1. *debug_python.py* を右クリックし、VS Code で開きます。 
         *debug_python.py* スクリプトには、KQL クエリからのインライン Python コードが含まれ、データフレームを *df.txt* から初期化し、パラメーターの辞書を *kargs.txt* から初期化するためにプリフィックスとしてテンプレート コードが付けられています。    
             
 1. VS Code で、VS Code デバッガーを起動します。 **[デバッグ]**  >  **[デバッグの開始] (F5)** の順に選択し、 **[Python]** 構成を選択します。 デバッガーが起動し、インライン コードをデバッグするブレークポイントが自動的に設定されます。
