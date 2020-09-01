@@ -1,6 +1,6 @@
 ---
-title: クエリ-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーのクエリについて説明します。
+title: クエリ - Azure Data Explorer
+description: この記事では、Azure Data Explorer のクエリについて説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
