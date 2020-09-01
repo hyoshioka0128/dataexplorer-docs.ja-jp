@@ -75,7 +75,7 @@ Azure データ エクスプローラーには、Event Hubs からの取り込�
 
     ![通知](media/ingest-data-event-hub/notifications.png)
 
-## <a name="create-a-target-table-in-azure-data-explorer"></a>Azure データ エクスプローラーでターゲット テーブルを作成する
+## <a name="create-a-target-table-in-azure-data-explorer"></a>Azure Data Explorer でターゲット テーブルを作成する
 
 次は、Event Hubs からデータを送信する先のテーブルを Azure データ エクスプローラーで作成します。 「**前提条件**」でプロビジョニングしたクラスターとデータベースにテーブルを作成します。
 
