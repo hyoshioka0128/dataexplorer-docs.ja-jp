@@ -1,6 +1,6 @@
 ---
-title: クエリ管理 - Azure データ エクスプローラー |マイクロソフトドキュメント
-description: この記事では、Azure データ エクスプローラーでのクエリ管理について説明します。
+title: クエリ管理 - Azure Data Explorer |マイクロソフトドキュメント
+description: この記事では、Azure Data Explorer でのクエリ管理について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
