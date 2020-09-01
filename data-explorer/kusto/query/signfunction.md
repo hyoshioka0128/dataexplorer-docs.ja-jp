@@ -1,6 +1,6 @@
 ---
-title: sign ()-Azure データエクスプローラー |Microsoft Docs
-description: この記事では、Azure データエクスプローラーの sign () について説明します。
+title: sign() - Azure Data Explorer |Microsoft Docs
+description: この記事では、Azure Data Explorer の sign() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
