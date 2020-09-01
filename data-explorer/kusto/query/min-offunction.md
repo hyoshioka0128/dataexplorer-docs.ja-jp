@@ -1,6 +1,6 @@
 ---
-title: min_of ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの min_of () について説明します。
+title: min_of() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の min_of() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
