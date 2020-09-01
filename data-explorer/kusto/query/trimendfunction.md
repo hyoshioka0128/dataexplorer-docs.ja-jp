@@ -1,6 +1,6 @@
 ---
-title: trim_end ()-Azure データエクスプローラー |Microsoft Docs
-description: この記事では、Azure データエクスプローラーの trim_end () について説明します。
+title: trim_end() - Azure Data Explorer |Microsoft Docs
+description: この記事では、Azure Data Explorer の trim_end() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
