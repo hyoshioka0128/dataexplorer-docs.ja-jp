@@ -1,6 +1,6 @@
 ---
-title: hash_md5 ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの hash_md5 () について説明します。
+title: hash_md5() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の hash_md5 () について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
