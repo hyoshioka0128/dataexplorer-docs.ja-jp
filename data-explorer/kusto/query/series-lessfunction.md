@@ -1,6 +1,6 @@
 ---
-title: series_less ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの series_less () について説明します。
+title: series_less() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の series_less() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
