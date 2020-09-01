@@ -1,6 +1,6 @@
 ---
-title: 外部テーブル-Azure データエクスプローラー |Microsoft Docs
-description: この記事では、Azure データエクスプローラーの外部テーブルについて説明します。
+title: 外部テーブル - Azure Data Explorer |Microsoft Docs
+description: この記事では、Azure Data Explorer の外部テーブルについて説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
@@ -17,9 +17,9 @@ ms.locfileid: "84780271"
 ---
 # <a name="external-tables"></a>外部テーブル
 
-**外部テーブル**は、Azure データエクスプローラーデータベースの外部に格納されているデータを参照する Kusto スキーマエンティティです。
+**外部テーブル**は、Azure Data Explorer データベースの外部に格納されているデータを参照する Kusto スキーマエンティティです。
 
-[テーブル](tables.md)と同様に、外部テーブルには、適切に定義されたスキーマ (列名とデータ型のペアの順序付きリスト) があります。 テーブルとは異なり、データはクラスターの外部で格納および管理されます。 ほとんどの場合、データは CSV、Parquet、Avro などの標準形式で格納され、Azure データエクスプローラーによって取り込まれたされることはありません。
+[テーブル](tables.md)と同様に、外部テーブルには、適切に定義されたスキーマ (列名とデータ型のペアの順序付きリスト) があります。 テーブルとは異なり、データはクラスターの外部で格納および管理されます。 ほとんどの場合、データは CSV、Parquet、Avro などの標準形式で格納され、Azure Data Explorer によって取り込まれたされることはありません。
 
 **外部テーブル**は1回作成されます。 外部テーブルを作成するには、次のコマンドを参照してください。
 * [外部テーブル全般制御コマンド](../../management/externaltables.md)
