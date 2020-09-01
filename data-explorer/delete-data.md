@@ -1,5 +1,5 @@
 ---
-title: Azure データ エクスプローラーからデータを削除する
+title: Azure Data Explorer からデータを削除する
 description: この記事では、消去、エクステントのドロップ、アイテム保持期間を使用した削除など、Azure Data Explorer の削除シナリオについて説明します。
 author: orspod
 ms.author: orspodek
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 04/15/2020
 ms.locfileid: "81493295"
 ---
-# <a name="delete-data-from-azure-data-explorer"></a>Azure データ エクスプローラーからデータを削除する
+# <a name="delete-data-from-azure-data-explorer"></a>Azure Data Explorer からデータを削除する
 
 Azure Data Explorer は、この記事で説明されているさまざまな削除のシナリオをサポートしています。 
 
