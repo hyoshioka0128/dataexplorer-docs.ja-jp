@@ -1,6 +1,6 @@
 ---
 title: Azure Data Explorer のデータ インジェスト概要
-description: Azure データ エクスプローラーでデータを取り込む (読み込む) さまざまな方法について説明します
+description: Azure Data Explorer でデータを取り込む (読み込む) さまざまな方法について説明します
 author: orspod
 ms.author: orspodek
 ms.reviewer: tzgitlin
@@ -72,7 +72,7 @@ Azure Data Explorer では複数のインジェスト方法がサポートされ
 
 ### <a name="programmatic-ingestion-using-sdks"></a>SDK を使用したプログラムによるインジェスト
 
-Azure データ エクスプローラーで提供されている SDK を使用して、クエリとデータ インジェストを行うことができます。 プログラムによるインジェストは、インジェスト プロセスの最中および後のストレージ トランザクションを最小限に抑えることによって、インジェスト コスト (COG) を削減するように最適化されています。
+Azure Data Explorer で提供されている SDK を使用して、クエリとデータ インジェストを行うことができます。 プログラムによるインジェストは、インジェスト プロセスの最中および後のストレージ トランザクションを最小限に抑えることによって、インジェスト コスト (COG) を削減するように最適化されています。
 
 **使用可能な SDK とオープン ソース プロジェクト**
 
