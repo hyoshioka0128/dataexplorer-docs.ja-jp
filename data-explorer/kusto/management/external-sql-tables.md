@@ -1,5 +1,5 @@
 ---
-title: 外部 SQL テーブルの作成と変更-Azure データエクスプローラー
+title: 外部 SQL テーブルの作成と変更 - Azure Data Explorer
 description: この記事では、外部 SQL テーブルを作成および変更する方法について説明します。
 services: data-explorer
 author: orspod
