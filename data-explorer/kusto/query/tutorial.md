@@ -1,6 +1,6 @@
 ---
-title: チュートリアル-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーのチュートリアルについて説明します。
+title: チュートリアル - Azure Data Explorer
+description: この記事では、Azure Data Explorer のチュートリアルについて説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
