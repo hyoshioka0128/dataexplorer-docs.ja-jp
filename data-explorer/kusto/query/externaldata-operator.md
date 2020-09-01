@@ -1,6 +1,6 @@
 ---
-title: externaldata オペレーター-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの外部データ演算子について説明します。
+title: externaldata オペレーター - Azure Data Explorer
+description: この記事では、Azure Data Explorer の外部データ演算子について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
