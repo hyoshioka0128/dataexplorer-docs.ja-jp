@@ -1,6 +1,6 @@
 ---
-title: クエリの制限-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーのクエリ制限について説明します。
+title: クエリの制限 - Azure Data Explorer
+description: この記事では、Azure Data Explorer のクエリ制限について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
