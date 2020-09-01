@@ -1,6 +1,6 @@
 ---
-title: Kusto エクスプローラー コード ナビゲーション - Azure データ エクスプローラー |マイクロソフトドキュメント
-description: この記事では、Azure データ エクスプローラーでの Kusto エクスプローラー コード ナビゲーションについて説明します。
+title: Kusto エクスプローラー コード ナビゲーション - Azure Data Explorer |マイクロソフトドキュメント
+description: この記事では、Azure Data Explorer での Kusto エクスプローラー コード ナビゲーションについて説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
