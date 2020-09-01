@@ -1,6 +1,6 @@
 ---
-title: 前 ()-Azure データエクスプローラー |Microsoft Docs
-description: この記事では、Azure データエクスプローラーの前の () について説明します。
+title: ago() - Azure Data Explorer |Microsoft Docs
+description: この記事では、Azure Data Explorer の ago() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
