@@ -1,6 +1,6 @@
 ---
-title: Azure データエクスプローラー Java SDK-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラー Java SDK について説明します。
+title: Azure Data Explorer Java SDK - Azure Data Explorer
+description: この記事では、Azure Data Explorer Java SDK について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
@@ -15,7 +15,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 07/28/2020
 ms.locfileid: "87350487"
 ---
-# <a name="azure-data-explorer-java-sdk"></a>Azure データエクスプローラー Java SDK
+# <a name="azure-data-explorer-java-sdk"></a>Azure Data Explorer Java SDK
 
-*Kusto java クライアント*ライブラリには、java を使用して Azure データエクスプローラークラスターに対してクエリを実行する機能が用意されています。
-Azure データエクスプローラー Java SDK は、 [azure](https://github.com/Azure/azure-kusto-java)で使用できます。
+*Kusto java クライアント*ライブラリには、java を使用して Azure Data Explorer クラスターに対してクエリを実行する機能が用意されています。
+Azure Data Explorer Java SDK は、 [azure](https://github.com/Azure/azure-kusto-java)で使用できます。
