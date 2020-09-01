@@ -1,5 +1,5 @@
 ---
-title: データの消去-Azure Data Explorer
+title: データの消去 - Azure Data Explorer
 description: この記事では、Azure Data Explorer でのデータの消去について説明します。
 services: data-explorer
 author: orspod
