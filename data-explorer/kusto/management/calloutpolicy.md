@@ -1,5 +1,5 @@
 ---
-title: コールアウトポリシー-Azure Data Explorer
+title: コールアウトポリシー - Azure Data Explorer
 description: この記事では、Azure Data Explorer のコールアウトポリシーについて説明します。
 services: data-explorer
 author: orspod
