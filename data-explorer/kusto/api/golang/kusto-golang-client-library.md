@@ -1,6 +1,6 @@
 ---
-title: Azure データエクスプローラーゴー SDK
-description: この記事では、Azure データエクスプローラーのアクセス SDK について説明します。
+title: Azure Data Explorer Go SDK 
+description: この記事では、Azure Data Explorer のアクセス SDK について説明します。
 author: orspod
 ms.author: orspodek
 ms.reviewer: vladikb
@@ -13,9 +13,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 07/28/2020
 ms.locfileid: "87350504"
 ---
-# <a name="azure-data-explorer-golang-sdk"></a>Azure データエクスプローラー Golang SDK
+# <a name="azure-data-explorer-golang-sdk"></a>Azure Data Explorer Golang SDK
 
-Azure データエクスプローラーのクライアントライブラリには、Azure データエクスプローラークラスターへのクエリ、制御、取り込みを実行する機能が用意されています。 これは、**データプレーン**SDK です (Azure データエクスプローラーサービスと対話するためのものです)。 コントロールプレーン (リソース管理) については、次のページを参照してください。https://github.com/Azure/azure-sdk-for-go/tree/master/services/kusto/mgmt 
+Azure Data Explorer のクライアントライブラリには、Azure Data Explorer クラスターへのクエリ、制御、取り込みを実行する機能が用意されています。 これは、**データプレーン**SDK です (Azure Data Explorer サービスと対話するためのものです)。 コントロールプレーン (リソース管理) については、次のページを参照してください。https://github.com/Azure/azure-sdk-for-go/tree/master/services/kusto/mgmt 
 
 ## <a name="minimum-requirements"></a>最小要件
 * ゴーバージョンゴー1.13
