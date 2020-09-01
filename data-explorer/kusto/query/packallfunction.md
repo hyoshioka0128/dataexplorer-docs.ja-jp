@@ -1,6 +1,6 @@
 ---
-title: pack_all ()-Azure データエクスプローラー |Microsoft Docs
-description: この記事では、Azure データエクスプローラーの pack_all () について説明します。
+title: pack_all() - AAzure Data Explorer |Microsoft Docs
+description: この記事では、Azure Data Explorer の pack_all() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
