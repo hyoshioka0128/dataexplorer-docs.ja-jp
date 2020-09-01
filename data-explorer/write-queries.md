@@ -1,6 +1,6 @@
 ---
-title: Azure データ エクスプローラーのクエリを記述する
-description: このガイドでは、Azure データ エクスプローラーで基本クエリとより高度なクエリを実行する方法について説明します。
+title: Azure Data Explorer のクエリを記述する
+description: このガイドでは、Azure Data Explorer で基本クエリとより高度なクエリを実行する方法について説明します。
 author: orspod
 ms.author: orspodek
 ms.reviewer: mblythe
@@ -14,7 +14,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2020
 ms.locfileid: "84214410"
 ---
-# <a name="write-queries-for-azure-data-explorer"></a>Azure データ エクスプローラーのクエリを記述する
+# <a name="write-queries-for-azure-data-explorer"></a>Azure Data Explorer のクエリを記述する
 
 この記事では、Azure のデータ エクスプローラーのクエリ言語を使用し、最も一般的な演算子を含む基本的なクエリを実行する方法について説明します。 この言語のより高度な機能についても一部説明します。
 
@@ -22,7 +22,7 @@ ms.locfileid: "84214410"
 
 この記事では、2 つの方法のいずれかでクエリを実行できます。
 
-- 学習の補助目的で設定した Azure データ エクスプローラー *ヘルプ クラスター*で。
+- 学習の補助目的で設定した Azure Data Explorer *ヘルプ クラスター*で。
     Azure Active Directory に登録されている組織の電子メール アカウントで[クラスターにサインインします](https://dataexplorer.azure.com/clusters/help/databases/samples)。
 
 - StormEvents サンプル データが含まれる独自のクラスターで。 詳細については、「[クイック スタート:Azure Data Explorer クラスターとデータベースを作成する](create-cluster-database-portal.md)」、および「[Azure のデータ エクスプローラーにサンプル データを取り込む](ingest-sample-data.md)」を参照してください。
@@ -59,7 +59,7 @@ StormEvents
 
 ## <a name="most-common-operators"></a>最も一般的な演算子
 
-このセクションで取り上げる演算子は、Azure データ エクスプローラーのクエリを理解するための基本となります。 記述するクエリの多くには、ここで説明する演算子がいくつか含まれます。
+このセクションで取り上げる演算子は、Azure Data Explorer のクエリを理解するための基本となります。 記述するクエリの多くには、ここで説明する演算子がいくつか含まれます。
 
 ヘルプ クラスターでクエリを実行するには、各クエリの上にある **[クリックするとクエリが実行されます]** を選択してください。
 
