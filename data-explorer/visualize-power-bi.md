@@ -1,6 +1,6 @@
 ---
 title: チュートリアル:Power BI で Azure Data Explorer のデータを視覚化する
-description: このチュートリアルでは、Power BI で Azure データ エクスプローラーに接続して、データを視覚化する方法について説明します。
+description: このチュートリアルでは、Power BI で Azure Data Explorer に接続して、データを視覚化する方法について説明します。
 author: orspod
 ms.author: orspodek
 ms.reviewer: gabil
@@ -16,15 +16,15 @@ ms.locfileid: "84420919"
 ---
 # <a name="tutorial-visualize-data-from-azure-data-explorer-in-power-bi"></a>チュートリアル:Power BI で Azure Data Explorer のデータを視覚化する
 
-Azure Data Explorer は、ログと利用統計情報データのための高速で拡張性に優れたデータ探索サービスです。 Power BI はビジネス分析ソリューションであり、データを視覚化して、組織全体で結果を共有することができます。 このチュートリアルでは、最初に Azure データ エクスプローラーでビジュアルをレンダリングする方法を説明します。 次に、Azure データ エクスプローラーを Power BI と接続し、サンプル データに基づいてレポートを作成して、レポートを Power BI サービスに発行します。
+Azure Data Explorer は、ログと利用統計情報データのための高速で拡張性に優れたデータ探索サービスです。 Power BI はビジネス分析ソリューションであり、データを視覚化して、組織全体で結果を共有することができます。 このチュートリアルでは、最初に Azure Data Explorer でビジュアルをレンダリングする方法を説明します。 次に、Azure Data Explorer を Power BI と接続し、サンプル データに基づいてレポートを作成して、レポートを Power BI サービスに発行します。
 
 Azure サブスクリプションをお持ちでない場合は、開始する前に[無料の Azure アカウント](https://azure.microsoft.com/free/)を作成してください。 Power BI Pro にサインアップしていない場合は、[無料試用版にサインアップ](https://app.powerbi.com/signupredirect?pbi_source=web)してから始めてください。
 
 このチュートリアルでは、以下の内容を学習します。
 
 > [!div class="checklist"]
-> * Azure データ エクスプローラーでビジュアルをレンダリングする
-> * Power BI Desktop で Azure データ エクスプローラーに接続する
+> * Azure Data Explorer でビジュアルをレンダリングする
+> * Power BI Desktop で Azure Data Explorer に接続する
 > * Power BI Desktop でデータを操作する
 > * ビジュアルでレポートを作成する
 > * レポートを発行して共有する
@@ -39,9 +39,9 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 
 * [Power BI Desktop](https://powerbi.microsoft.com/get-started/) ( **[無料ダウンロード]** を選択)
 
-## <a name="render-visuals-in-azure-data-explorer"></a>Azure データ エクスプローラーでビジュアルをレンダリングする
+## <a name="render-visuals-in-azure-data-explorer"></a>Azure Data Explorer でビジュアルをレンダリングする
 
-Power BI に進む前に、Azure データ エクスプローラーでビジュアルをレンダリングする方法を見ておきましょう。 これは、簡単な分析に適しています。
+Power BI に進む前に、Azure Data Explorer でビジュアルをレンダリングする方法を見ておきましょう。 これは、簡単な分析に適しています。
 
 1. [https://dataexplorer.azure.com](https://dataexplorer.azure.com) にサインインします。
 
@@ -75,11 +75,11 @@ Power BI に進む前に、Azure データ エクスプローラーでビジュ�
 
     ![イベントの円グラフ](media/visualize-power-bi/events-pie-chart.png)
 
-次に Power BI について説明しますが、Azure データ エクスプローラーではビジュアルに関してさらに多くのことを行えます。
+次に Power BI について説明しますが、Azure Data Explorer ではビジュアルに関してさらに多くのことを行えます。
 
-## <a name="connect-to-azure-data-explorer"></a>Azure データ エクスプローラーに接続する
+## <a name="connect-to-azure-data-explorer"></a>Azure Data Explorer に接続する
 
-Power BI Desktop で Azure データ エクスプローラーに接続します。
+Power BI Desktop で Azure Data Explorer に接続します。
 
 1. Power BI Desktop の **[ホーム]** タブで、 **[データの取得]** 、 **[詳細]** の順に選択します。
 
@@ -101,7 +101,7 @@ Power BI Desktop で Azure データ エクスプローラーに接続します�
 
 ## <a name="work-with-data-in-power-bi-desktop"></a>Power BI Desktop でデータを操作する
 
-Azure データ エクスプローラーに接続したので、Power Query エディターでデータを編集します。 **BeginLat** 列が null 値である行を削除し、**StormSummary** JSON 列全体を削除します。 これらは簡単な操作ですが、データをインポートするときに複雑な変換を実行することもできます。
+Azure Data Explorer に接続したので、Power Query エディターでデータを編集します。 **BeginLat** 列が null 値である行を削除し、**StormSummary** JSON 列全体を削除します。 これらは簡単な操作ですが、データをインポートするときに複雑な変換を実行することもできます。
 
 1. **BeginLat** 列の矢印を選択して、**null** のチェック ボックスをオフにし、 **[OK]** を選択します。
 
