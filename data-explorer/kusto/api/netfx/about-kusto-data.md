@@ -1,6 +1,6 @@
 ---
-title: Kusto クライアント ライブラリ - Azure データ エクスプローラー |マイクロソフトドキュメント
-description: この記事では、Azure データ エクスプローラーの Kusto クライアント ライブラリについて説明します。
+title: Kusto クライアント ライブラリ - Azure Data Explorer |マイクロソフトドキュメント
+description: この記事では、Azure Data Explorer の Kusto クライアント ライブラリについて説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
