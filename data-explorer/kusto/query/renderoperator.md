@@ -1,6 +1,6 @@
 ---
-title: render 操作-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーのレンダー演算子について説明します。
+title: render 操作 - Azure Data Explorer
+description: この記事では、Azure Data Explorer のレンダー演算子について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
