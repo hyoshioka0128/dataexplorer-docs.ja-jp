@@ -15,10 +15,10 @@ ms.locfileid: "87350504"
 ---
 # <a name="azure-data-explorer-golang-sdk"></a>Azure Data Explorer Golang SDK
 
-Azure Data Explorer のクライアントライブラリには、Azure Data Explorer クラスターへのクエリ、制御、取り込みを実行する機能が用意されています。 これは、**データプレーン**SDK です (Azure Data Explorer サービスと対話するためのものです)。 コントロールプレーン (リソース管理) については、次のページを参照してください。https://github.com/Azure/azure-sdk-for-go/tree/master/services/kusto/mgmt 
+Azure Data Explorer のクライアントライブラリには、Azure Data Explorer クラスターへのクエリ、制御、取り込みを実行する機能が用意されています。 これは、**データプレーン** SDK です (Azure Data Explorer サービスと対話するためのものです)。 コントロールプレーン (リソース管理) については、次のページを参照してください。https://github.com/Azure/azure-sdk-for-go/tree/master/services/kusto/mgmt 
 
 ## <a name="minimum-requirements"></a>最小要件
-* ゴーバージョンゴー1.13
+* go version go1.13
 
 ## <a name="installation"></a>インストール
 `go get github.com/Azure/azure-kusto-go/kusto`
