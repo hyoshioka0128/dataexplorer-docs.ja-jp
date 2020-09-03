@@ -1,6 +1,6 @@
 ---
-title: current_principal_is_member_of ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの current_principal_is_member_of () について説明します。
+title: current_principal_is_member_of() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の current_principal_is_member_of() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
