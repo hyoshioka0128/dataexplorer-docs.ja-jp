@@ -1,6 +1,6 @@
 ---
-title: データベース管理-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーでのデータベース管理について説明します。
+title: データベース管理 - Azure Data Explorer
+description: この記事では、Azure Data Explorer でのデータベース管理について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
@@ -21,8 +21,8 @@ ms.locfileid: "82966742"
 
 |command |説明 |
 |--------|------------|
-|[。データベースを表示します。](show-databases.md) |すべてのレコードが、ユーザーがアクセスできるクラスター内のデータベースに対応するテーブルを返します。|
+|[.show databases](show-databases.md) |すべてのレコードが、ユーザーがアクセスできるクラスター内のデータベースに対応するテーブルを返します。|
 |[.show database](show-database.md) |コンテキストデータベースのプロパティを示すテーブルを返します。 |
-|[。クラスターデータベースを表示します。](show-cluster-database.md) |クラスターにアタッチされ、コマンドを呼び出しているユーザーがアクセスできるすべてのデータベースを示すテーブルを返します。 |
-|[. alter database](alter-database.md) |データベースの非常にわかりやすい名前を変更します。 |
+|[.show cluster databases](show-cluster-database.md) |クラスターにアタッチされ、コマンドを呼び出しているユーザーがアクセスできるすべてのデータベースを示すテーブルを返します。 |
+|[.alter database](alter-database.md) |データベースの非常にわかりやすい名前を変更します。 |
 |[.show database schema](show-schema-database.md) |1つのテーブルまたは JSON オブジェクト内のすべてのテーブルと列を含む、選択されたデータベースの構造の単純なリストを返します。 |
