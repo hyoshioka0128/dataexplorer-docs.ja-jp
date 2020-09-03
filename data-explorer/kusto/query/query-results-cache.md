@@ -1,6 +1,6 @@
 ---
-title: クエリ結果のキャッシュ-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーのクエリ結果キャッシュ機能について説明します。
+title: クエリ結果のキャッシュ - Azure Data Explorer
+description: この記事では、Azure Data Explorer のクエリ結果キャッシュ機能について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
