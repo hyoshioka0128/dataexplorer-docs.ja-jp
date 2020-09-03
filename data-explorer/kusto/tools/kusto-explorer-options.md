@@ -1,6 +1,6 @@
 ---
-title: Kusto Explorer のオプション-Azure データエクスプローラー |Microsoft Docs
-description: この記事では、Azure データエクスプローラーの Kusto Explorer オプションについて説明します。
+title: Kusto Explorer のオプション - Azure Data Explorer | Microsoft Docs
+description: この記事では、Azure Data Explorer の Kusto Explorer オプションについて説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
