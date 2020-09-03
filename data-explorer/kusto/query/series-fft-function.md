@@ -1,6 +1,6 @@
 ---
-title: series_fft ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの series_fft () 関数について説明します。
+title: series_fft() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の series_fft () 関数について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
