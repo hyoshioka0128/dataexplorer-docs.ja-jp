@@ -1,6 +1,6 @@
 ---
-title: format_ipv4 ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの format_ipv4 () について説明します。
+title: format_ipv4() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の format_ipv4() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
