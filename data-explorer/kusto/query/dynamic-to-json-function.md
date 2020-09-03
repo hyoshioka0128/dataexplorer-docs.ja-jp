@@ -1,6 +1,6 @@
 ---
-title: dynamic_to_json ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの dynamic_to_json () について説明します。
+title: dynamic_to_json() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の dynamic_to_json() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
