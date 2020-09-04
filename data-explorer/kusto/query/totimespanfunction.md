@@ -1,6 +1,6 @@
 ---
-title: totimespan ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの totimespan () について説明します。
+title: totimespan() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の totimespan() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
