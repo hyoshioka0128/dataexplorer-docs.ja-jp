@@ -1,6 +1,6 @@
 ---
-title: 列 - Azure データ エクスプローラー |マイクロソフトドキュメント
-description: この記事では、Azure データ エクスプローラーの列について説明します。
+title: 列 - Azure Data Explorer |マイクロソフトドキュメント
+description: この記事では、Azure Data Explorer の列について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
