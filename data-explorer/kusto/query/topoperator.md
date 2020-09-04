@@ -1,6 +1,6 @@
 ---
-title: top 演算子-Azure データエクスプローラー |Microsoft Docs
-description: この記事では、Azure データエクスプローラーの最上位の演算子について説明します。
+title: top 演算子 - Azure Data Explorer |Microsoft Docs
+description: この記事では、Azure Data Explorer の最上位の演算子について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
