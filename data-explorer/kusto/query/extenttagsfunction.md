@@ -1,6 +1,6 @@
 ---
-title: extent_tags ()-Azure データエクスプローラー |Microsoft Docs
-description: この記事では、Azure データエクスプローラーの extent_tags () について説明します。
+title: extent_tags() - Azure Data Explorer | Microsoft Docs
+description: この記事では、Azure Data Explorer の extent_tags() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
