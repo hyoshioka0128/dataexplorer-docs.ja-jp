@@ -1,6 +1,6 @@
 ---
-title: bag_merge ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの bag_merge () について説明します。
+title: bag_merge() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の bag_merge() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
