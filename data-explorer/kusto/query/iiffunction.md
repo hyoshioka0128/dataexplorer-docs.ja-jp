@@ -1,6 +1,6 @@
 ---
-title: iif ()-Azure データエクスプローラー |Microsoft Docs
-description: この記事では、Azure データエクスプローラーの iif () について説明します。
+title: iif()　-　Azure Data Explorer |　Microsoft Docs
+description: この記事では、Azure Data Explorer　の iif() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
