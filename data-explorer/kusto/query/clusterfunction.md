@@ -1,6 +1,6 @@
 ---
-title: cluster () (スコープ関数)-Azure データエクスプローラー |Microsoft Docs
-description: この記事では、Azure データエクスプローラーの cluster () (スコープ関数) について説明します。
+title: cluster() (スコープ関数) - Azure Data Explorer |Microsoft Docs
+description: この記事では、Azure Data Explorer の cluster() (スコープ関数) について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
@@ -17,7 +17,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 07/28/2020
 ms.locfileid: "87348889"
 ---
-# <a name="cluster-scope-function"></a>cluster () (スコープ関数)
+# <a name="cluster-scope-function"></a>cluster() (スコープ関数)
 
 ::: zone pivot="azuredataexplorer"
 
