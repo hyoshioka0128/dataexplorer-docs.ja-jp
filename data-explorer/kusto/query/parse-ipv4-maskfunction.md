@@ -1,6 +1,6 @@
 ---
-title: parse_ipv4_mask ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの parse_ipv4_mask () 関数について説明します。
+title: parse_ipv4_mask() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の parse_ipv4_mask() 関数について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
