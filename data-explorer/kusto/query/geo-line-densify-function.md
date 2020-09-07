@@ -1,6 +1,6 @@
 ---
-title: geo_line_densify ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの geo_line_densify () について説明します。
+title: geo_line_densify() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の geo_line_densify() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
