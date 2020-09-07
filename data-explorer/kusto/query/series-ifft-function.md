@@ -1,6 +1,6 @@
 ---
-title: series_ifft ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの series_ifft () 関数について説明します。
+title: series_ifft() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の series_ifft() 関数について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
@@ -15,11 +15,11 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 08/17/2020
 ms.locfileid: "88502164"
 ---
-# <a name="series_ifft"></a>series_ifft ()
+# <a name="series_ifft"></a>series_ifft()
 
 系列に対して反転高速フーリエ変換 (IFFT) を適用します。  
 
-Series_ifft () 関数は、frequency ドメイン内の一連の複素数を受け取り、 [高速フーリエ変換](https://en.wikipedia.org/wiki/Fast_Fourier_transform)を使用してタイム/空間ドメインに戻します。 この関数は、 [series_fft](series-fft-function.md)の補完的な機能です。 通常、元のシリーズは、スペクトル処理の場合は frequency ドメインに変換され、その後はタイム/空間ドメインに戻されます。
+Series_ifft() 関数は、frequency ドメイン内の一連の複素数を受け取り、 [高速フーリエ変換](https://en.wikipedia.org/wiki/Fast_Fourier_transform)を使用してタイム/空間ドメインに戻します。 この関数は、 [series_fft](series-fft-function.md)の補完的な機能です。 通常、元のシリーズは、スペクトル処理の場合は frequency ドメインに変換され、その後はタイム/空間ドメインに戻されます。
 
 ## <a name="syntax"></a>構文
 
@@ -36,4 +36,4 @@ Series_ifft () 関数は、frequency ドメイン内の一連の複素数を受�
 
 ## <a name="example"></a>例
 
-「」を参照してください [series_fft](series-fft-function.md#example)
+「[series_fft](series-fft-function.md#example)」を参照してください
