@@ -1,6 +1,6 @@
 ---
-title: スキーマデザインのベストプラクティス-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーでのスキーマ設計のベストプラクティスについて説明します。
+title: スキーマデザインのベストプラクティス - Azure Data Explorer
+description: この記事では、Azure Data Explorer でのスキーマ設計のベストプラクティスについて説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
