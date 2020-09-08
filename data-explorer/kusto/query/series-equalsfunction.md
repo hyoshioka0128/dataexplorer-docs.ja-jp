@@ -1,6 +1,6 @@
 ---
-title: series_equals ()-Azure データエクスプローラー
-description: この記事では、Azure データエクスプローラーの series_equals () について説明します。
+title: series_equals() - Azure Data Explorer
+description: この記事では、Azure Data Explorer の series_equals() について説明します。
 services: data-explorer
 author: orspod
 ms.author: orspodek
