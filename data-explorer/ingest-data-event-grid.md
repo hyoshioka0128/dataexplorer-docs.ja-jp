@@ -32,7 +32,7 @@ ms.locfileid: "88874989"
 * [クラスターとデータベース](create-cluster-database-portal.md)。
 * [ストレージ アカウント](/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal)。
 
-## <a name="create-a-target-table-in-azure-data-explorer"></a>Azure データ エクスプローラーでターゲット テーブルを作成する
+## <a name="create-a-target-table-in-azure-data-explorer"></a>Azure Data Explorer でターゲット テーブルを作成する
 
 Azure Data Explorer で、Event Hubs のデータの送信先となるテーブルを作成します。 前提条件で準備したクラスターとデータベース内にテーブルを作成します。
 
