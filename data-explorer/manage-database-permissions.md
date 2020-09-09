@@ -1,6 +1,6 @@
 ---
 title: Azure Data Explorer のデータベース アクセス許可を管理する
-description: この記事では、Azure データ エクスプローラーにおけるデータベースとテーブルに対するロールベースのアクセス制御について説明します。
+description: この記事では、Azure Data Explorer におけるデータベースとテーブルに対するロールベースのアクセス制御について説明します。
 author: orspod
 ms.author: orspodek
 ms.reviewer: mblythe
@@ -14,15 +14,15 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2020
 ms.locfileid: "88874768"
 ---
-# <a name="manage-azure-data-explorer-database-permissions"></a>Azure データ エクスプローラーのデータベース アクセス許可を管理する
+# <a name="manage-azure-data-explorer-database-permissions"></a>Azure Data Explorer のデータベース アクセス許可を管理する
 
-Azure データ エクスプローラーを使用すると、"*ロールベースのアクセス制御*" モデルを使用して、データベースとテーブルへのアクセスを制御することができます。 このモデルでは、"*プリンシパル*" (ユーザー、グループ、およびアプリ) が "*ロール*" にマッピングされます。 プリンシパルは、割り当てられたロールに従ってリソースにアクセスできます。
+Azure Data Explorer を使用すると、"*ロールベースのアクセス制御*" モデルを使用して、データベースとテーブルへのアクセスを制御することができます。 このモデルでは、"*プリンシパル*" (ユーザー、グループ、およびアプリ) が "*ロール*" にマッピングされます。 プリンシパルは、割り当てられたロールに従ってリソースにアクセスできます。
 
 この記事では、使用できるロールと、Azure portal と Azure Data Explorer の管理コマンドを使用して、これらのロールにプリンシパルを割り当てる方法について説明します。
 
 ## <a name="roles-and-permissions"></a>ロールとアクセス許可
 
-Azure データ エクスプローラーには、次のロールがあります。
+Azure Data Explorer には、次のロールがあります。
 
 |Role                       |アクセス許可                                                                        |
 |---------------------------|-----------------------------------------------------------------------------------|
@@ -38,7 +38,7 @@ Azure データ エクスプローラーには、次のロールがあります�
 
 1. [Azure portal](https://portal.azure.com/) にサインインする
 
-1. Azure データ エクスプローラー クラスターに移動します。
+1. Azure Data Explorer クラスターに移動します。
 
 1. **[概要]** セクションで、アクセス許可を管理するデータベースを選択します。
 
