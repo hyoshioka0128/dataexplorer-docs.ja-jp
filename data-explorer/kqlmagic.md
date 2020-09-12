@@ -22,7 +22,7 @@ Jupyter Notebook はオープン ソースの Web アプリケーションであ
 ## <a name="prerequisites"></a>前提条件
 
 - Azure Active Directory (AAD) のメンバーである、組織の電子メール アカウント。
-- ローカル コンピューターにインストールされた Jupyter Notebook、または Azure Notebook を使用してサンプルの [Azure ノートブック](https://kustomagicsamples-manojraheja.notebooks.azure.com/j/notebooks/Getting%20Started%20with%20kqlmagic%20on%20Azure%20Data%20Explorer.ipynb)を複製します
+- ローカル コンピューターにインストールされた Jupyter Notebook、または Azure Notebook を使用してサンプルの [Azure Notebook](https://kustomagicsamples-manojraheja.notebooks.azure.com/j/notebooks/Getting%20Started%20with%20kqlmagic%20on%20Azure%20Data%20Explorer.ipynb)を複製します
 
 ## <a name="install-kqlmagic-library"></a>Kqlmagic ライブラリをインストールする
 
