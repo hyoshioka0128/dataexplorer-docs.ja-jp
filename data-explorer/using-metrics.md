@@ -129,4 +129,4 @@ Azure Data Explorer 用の Azure Monitor のメトリックのアルファベッ
 
 * [チュートリアル:Azure Data Explorer で監視データを取り込んでクエリを実行する](ingest-data-no-code.md)
 * [診断ログを使用して Azure Data Explorer インジェスト操作を監視する](using-diagnostic-logs.md)
-* [クイック スタート: Azure データ エクスプローラーでデータのクエリを実行する](web-query-data.md)
+* [クイック スタート: Azure Data Explorer でデータのクエリを実行する](web-query-data.md)
