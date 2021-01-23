@@ -1,6 +1,6 @@
 ---
-title: Azure のデータ エクスプローラーにサンプル データを取り込む
-description: Azure のデータ エクスプローラーに気象関連のサンプル データ (負荷) を取り込む方法を説明します。
+title: Azure Data Explorer にサンプル データを取り込む
+description: Azure Data Explorer に気象関連のサンプル データ (負荷) を取り込む方法を説明します。
 author: orspod
 ms.author: orspodek
 ms.reviewer: mblythe
@@ -14,9 +14,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 09/05/2020
 ms.locfileid: "89493625"
 ---
-# <a name="quickstart-ingest-sample-data-into-azure-data-explorer"></a>クイック スタート:Azure のデータ エクスプローラーにサンプル データを取り込む
+# <a name="quickstart-ingest-sample-data-into-azure-data-explorer"></a>クイック スタート:Azure Data Explorer にサンプル データを取り込む
 
-この記事では、Azure のデータ エクスプローラー データベースにサンプル データ (負荷) を取り込む方法を示します。 [データを取り込む方法はいくつかあります](ingest-data-overview.md)｡ 今回は、テスト目的に適した基本的なアプローチに注目します。
+この記事では、Azure Data Explorer データベースにサンプル データ (負荷) を取り込む方法を示します。 [データを取り込む方法はいくつかあります](ingest-data-overview.md)｡ 今回は、テスト目的に適した基本的なアプローチに注目します。
 
 > [!NOTE]
 > 「[Azure Data Explorer の Python ライブラリを使用してデータを取り込む](python-ingest-data.md)」を終えている場合、サンプル データは既にあります｡
