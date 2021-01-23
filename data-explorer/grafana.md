@@ -32,7 +32,7 @@ Grafana の Azure Data Explorer プラグインを使用し、Azure Data Explore
 
 * Grafana の [Azure Data Explorer プラグイン](https://grafana.com/plugins/grafana-azure-data-explorer-datasource/installation)。 Grafana クエリ ビルダーを使用するには、プラグイン バージョン 3.0.5 以降が必要です。
 
-* StormEvents サンプル データを含むクラスター。 詳細については、「[クイック スタート:Azure Data Explorer クラスターとデータベースを作成する](create-cluster-database-portal.md)」、および「[Azure のデータ エクスプローラーにサンプル データを取り込む](ingest-sample-data.md)」を参照してください。
+* StormEvents サンプル データを含むクラスター。 詳細については、「[クイック スタート:Azure Data Explorer クラスターとデータベースを作成する](create-cluster-database-portal.md)」、および「[Azure Data Explorer にサンプル データを取り込む](ingest-sample-data.md)」を参照してください。
 
     [!INCLUDE [data-explorer-storm-events](includes/data-explorer-storm-events.md)]
 
