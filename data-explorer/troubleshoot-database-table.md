@@ -1,6 +1,6 @@
 ---
-title: Azure データ エクスプローラーでデータベースまたはテーブルの作成または削除が失敗する
-description: この記事では、Azure データ エクスプローラーでのデータベースおよびテーブルの作成と削除に関するトラブルシューティング手順について説明します。
+title: Azure Data Explorer でデータベースまたはテーブルの作成または削除が失敗する
+description: この記事では、Azure Data Explorer でのデータベースおよびテーブルの作成と削除に関するトラブルシューティング手順について説明します。
 author: orspod
 ms.author: orspodek
 ms.reviewer: mblythe
@@ -14,9 +14,9 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 08/26/2020
 ms.locfileid: "88875363"
 ---
-# <a name="troubleshoot-failure-to-create-or-delete-a-database-or-table-in-azure-data-explorer"></a>トラブルシューティング:Azure データ エクスプローラーでデータベースまたはテーブルの作成または削除が失敗する
+# <a name="troubleshoot-failure-to-create-or-delete-a-database-or-table-in-azure-data-explorer"></a>トラブルシューティング:Azure Data Explorer でデータベースまたはテーブルの作成または削除が失敗する
 
-Azure データ エクスプローラーでは、データベースやテーブルの作業をよく行います。 この記事では、発生する可能性のある問題のトラブルシューティング手順を示します。
+Azure Data Explorer では、データベースやテーブルの作業をよく行います。 この記事では、発生する可能性のある問題のトラブルシューティング手順を示します。
 
 ## <a name="creating-a-database"></a>データベースを作成する
 
@@ -52,7 +52,7 @@ Azure データ エクスプローラーでは、データベースやテーブ�
 
 ## <a name="general-guidance"></a>一般的なガイダンス
 
-1. [Azure サービス正常性ダッシュボード](https://azure.microsoft.com/status/)を確認します。 データベースまたはテーブルの作業を行おうとしているリージョンでの Azure データ エクスプローラーの状態を探します。
+1. [Azure サービス正常性ダッシュボード](https://azure.microsoft.com/status/)を確認します。 データベースまたはテーブルの作業を行おうとしているリージョンでの Azure Data Explorer の状態を探します。
 
     状態が **[良好]** (緑色のチェック マーク) でない場合は、状態が改善されてからもう一度試します。
 
