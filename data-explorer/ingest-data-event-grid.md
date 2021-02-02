@@ -178,7 +178,7 @@ BLOB メタデータを使用して、BLOB インジェストの[インジェス
 > [!NOTE]
 > Azure Data Explorer では、BLOB 投稿の取り込みは削除されません。
 > 3 から 5 日間、BLOB が保持されます。
-> [Azure BLOB ストレージのライフサイクル](/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal)を使用して、BLOB の削除を管理してください。 
+> [Azure Blob Storage のライフサイクル](/azure/storage/blobs/storage-lifecycle-management-concepts?tabs=azure-portal)を使用して、BLOB の削除を管理してください。 
 
 ## <a name="review-the-data-flow"></a>データ フローの確認
 
