@@ -16,7 +16,7 @@ ms.locfileid: "90680688"
 ---
 # <a name="query-data-in-azure-data-lake-using-azure-data-explorer"></a>Azure Data Explorer を使用して Azure Data Lake でデータのクエリを実行する
 
-Azure Data Lake Storage は、スケーラビリティが高く拡張性と費用対効果に優れた、ビッグ データ分析用のデータ レイク ソリューションです。 ハイパフォーマンス ファイル システムの能力に加えて、非常に高いスケーラビリティと効率性を兼ね備えており、お客様が分析情報を得るまでの時間を短縮するのに役立ちます。 Data Lake Storage Gen2 は Azure BLOB ストレージの機能を拡張するもので、分析ワークロード用に最適化されています。
+Azure Data Lake Storage は、スケーラビリティが高く拡張性と費用対効果に優れた、ビッグ データ分析用のデータ レイク ソリューションです。 ハイパフォーマンス ファイル システムの能力に加えて、非常に高いスケーラビリティと効率性を兼ね備えており、お客様が分析情報を得るまでの時間を短縮するのに役立ちます。 Data Lake Storage Gen2 は Azure Blob Storage の機能を拡張するもので、分析ワークロード用に最適化されています。
  
 Azure Data Explorer は、Azure Blob Storage および Azure Data Lake Storage (Gen1 および Gen2) と統合され、外部ストレージに格納されたデータへの高速でキャッシュされたインデックス付きのアクセスを提供します。 データは、Azure Data Explorer に事前に取り込まずに分析およびクエリを実行できます。 また、取り込んだデータと取り込んでいない外部データに対して同時にクエリを実行することもできます。  
 
@@ -33,7 +33,7 @@ Azure Data Explorer は、Azure Blob Storage および Azure Data Lake Storage (
 | 2019-01-01 11:30:55 | YDX1   | Yamaha DX1 Synthesizer  |
 | ...                 | ...    | ...                     |
 
-それらのファイルは、Azure BLOB ストレージ `mycompanystorage` の `archivedproducts` という名前のコンテナーに、日付ごとに分割されて格納されています。
+それらのファイルは、Azure Blob Storage `mycompanystorage` の `archivedproducts` という名前のコンテナーに、日付ごとに分割されて格納されています。
 
 ```
 https://mycompanystorage.blob.core.windows.net/archivedproducts/2019/01/01/part-00000-7e967c99-cf2b-4dbb-8c53-ce388389470d.csv.gz
