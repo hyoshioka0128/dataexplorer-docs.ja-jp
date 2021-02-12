@@ -5,14 +5,14 @@ author: orspod
 ms.author: orspodek
 ms.reviewer: rkarlin
 ms.service: data-explorer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/17/2020
-ms.openlocfilehash: 65e766530be51527e167cb7ea4e7df580f398a35
-ms.sourcegitcommit: a8575e80c65eab2a2118842e59f62aee0ff0e416
+ms.openlocfilehash: 058a42cc21c6af9642d91231e6b1620315f94f55
+ms.sourcegitcommit: 313a91d2a34383b5a6e39add6c8b7fabb4f8d39a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84942660"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90680688"
 ---
 # <a name="query-data-in-azure-data-lake-using-azure-data-explorer"></a>Azure Data Explorer を使用して Azure Data Lake でデータのクエリを実行する
 
@@ -125,7 +125,7 @@ dataformat=multijson
 データ フィールドを外部テーブル定義フィールドにマップする JSON マッピングを定義します。
 
 ```kusto
-.create external table ApiCalls json mapping 'MyMapping' '[{"Column":"Timestamp","Properties":{"Path":"$.time"}},{"Column":"TenantId","Properties":{"Path":"$.data.tenant"}},{"Column":"MethodName","Properties":{"Path":"$.data.method"}}]'
+.create external table ApiCalls json mapping 'MyMapping' '[{"Column":"Timestamp","Properties":{"Path":"$.timestamp"}},{"Column":"TenantId","Properties":{"Path":"$.data.tenant"}},{"Column":"MethodName","Properties":{"Path":"$.data.method"}}]'
 ```
 
 外部テーブルに対してクエリを実行すると、マッピングが呼び出され、関連するデータが外部テーブルの列にマップされます。

@@ -5,14 +5,14 @@ author: orspod
 ms.author: orspodek
 ms.reviewer: lugoldbe
 ms.service: data-explorer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/07/2019
-ms.openlocfilehash: d71dabaa3ed597b641d0e16c2ff152779fda2d53
-ms.sourcegitcommit: f7f3ecef858c1e8d132fc10d1e240dcd209163bd
+ms.openlocfilehash: c2cfe861898c2fa68960636b3c4bb4a2dc9b3075
+ms.sourcegitcommit: f2f9cc0477938da87e0c2771c99d983ba8158789
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88201375"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89502451"
 ---
 # <a name="create-an-event-hub-data-connection-for-azure-data-explorer-by-using-c"></a>C# を使用して Azure Data Explorer 用にイベント ハブ データ接続を作成する
 
@@ -91,5 +91,40 @@ await kustoManagementClient.DataConnections.CreateOrUpdateAsync(resourceGroupNam
 | eventHubResourceId | *リソース ID* | インジェスト用のデータを保持しているイベント ハブのリソース ID。 |
 | consumerGroup | *$Default* | ご利用のイベント ハブのコンシューマー グループ。|
 | location | *米国中部* | データ接続リソースの場所。|
+
+## <a name="generate-data"></a>データの生成
+
+データを生成してイベント ハブに送信する[サンプル アプリ](https://github.com/Azure-Samples/event-hubs-dotnet-ingest)をご覧ください。
+
+イベントには、そのサイズ制限を上限として、1 つ以上のレコードを含めることができます。 次の例では、2 つのイベントを送信します。それぞれに 5 つのレコードが追加されています。
+
+```csharp
+var events = new List<EventData>();
+var data = string.Empty;
+var recordsPerEvent = 5;
+var rand = new Random();
+var counter = 0;
+
+for (var i = 0; i < 10; i++)
+{
+    // Create the data
+    var metric = new Metric { Timestamp = DateTime.UtcNow, MetricName = "Temperature", Value = rand.Next(-30, 50) }; 
+    var data += JsonConvert.SerializeObject(metric) + Environment.NewLine;
+    counter++;
+
+    // Create the event
+    if (counter == recordsPerEvent)
+    {
+        var eventData = new EventData(Encoding.UTF8.GetBytes(data));
+        events.Add(eventData);
+
+        counter = 0;
+        data = string.Empty;
+    }
+}
+
+// Send events
+eventHubClient.SendAsync(events).Wait();
+```
 
 [!INCLUDE [data-explorer-data-connection-clean-resources-csharp](includes/data-explorer-data-connection-clean-resources-csharp.md)]

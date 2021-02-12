@@ -8,12 +8,12 @@ ms.reviewer: rkarlin
 ms.service: data-explorer
 ms.topic: reference
 ms.date: 02/13/2020
-ms.openlocfilehash: 656d1d5d9120baebced624fee476d261214eff57
-ms.sourcegitcommit: 83202ec6fec0ce98fdf993bbb72adc985d6d9c78
+ms.openlocfilehash: 8380e26b01f74585b2c3e99bb3eb4cd8c51df01c
+ms.sourcegitcommit: 4e95f5beb060b5d29c1d7bb8683695fe73c9f7ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87871852"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91103068"
 ---
 # <a name="mv-apply-operator"></a>mv-apply 演算子
 
@@ -61,19 +61,19 @@ T | mv-apply Metric to typeof(real) on
 
 *T* `|` `mv-apply` [*itemindex*] *columnstoexpand* [*rowlimit*] `on` `(` *サブクエリ*`)`
 
-ここで、 *Itemindex*には次の構文があります。
+ここで、 *Itemindex* には次の構文があります。
 
 `with_itemindex``=` *Indexcolumnname*
 
-*Columnstoexpand*は、次の形式の1つ以上の要素をコンマで区切ったリストです。
+*Columnstoexpand* は、次の形式の1つ以上の要素をコンマで区切ったリストです。
 
 [*名前* `=` ]*Arrayexpression* [ `to` `typeof` `(` *Typename* `)` ]
 
-*Rowlimit*は単に次のようになります。
+*Rowlimit* は単に次のようになります。
 
 `limit`*Rowlimit*
 
-および*サブクエリ*の構文は、任意のクエリステートメントと同じです。
+および *サブクエリ* の構文は、任意のクエリステートメントと同じです。
 
 ## <a name="arguments"></a>引数
 
@@ -84,9 +84,9 @@ T | mv-apply Metric to typeof(real) on
   *Arrayexpression*が単純な列名でない場合は、ランダムな名前が生成されます。
 
 * *Arrayexpression*: `dynamic` 値が配列展開される型の式。
-  式が入力の列の名前である場合、入力列が入力から削除され、同じ名前の新しい列 (指定されている場合は*ColumnName* ) が出力に表示されます。
+  式が入力の列の名前である場合、入力列が入力から削除され、同じ名前の新しい列 (指定されている場合は *ColumnName* ) が出力に表示されます。
 
-* *Typename*: 使用されている場合、 `dynamic` 配列*arrayexpression*の個々の要素によって取得される型の名前。 この型に準拠していない要素は、null 値に置き換えられます。
+* *Typename*: 使用されている場合、 `dynamic` 配列 *arrayexpression* の個々の要素によって取得される型の名前。 この型に準拠していない要素は、null 値に置き換えられます。
   (指定されていない場合、 `dynamic` は既定で使用されます。)
 
 * *Rowlimit*: 使用される場合、入力の各レコードから生成するレコードの数の制限。
@@ -94,7 +94,7 @@ T | mv-apply Metric to typeof(real) on
 
 * *サブクエリ*: 配列で展開された各サブテーブルに適用される、暗黙的な表形式ソースを持つ表形式クエリ式。
 
-**注**
+**メモ**
 
 * 演算子とは異なり [`mv-expand`](./mvexpandoperator.md) 、 `mv-apply` 演算子は配列の拡張だけをサポートします。 プロパティバッグの拡張はサポートされていません。
 
@@ -139,7 +139,6 @@ _data
 |1    |[1, 3, 5, 7]|12       |
 |0    |[2、4、6、8]|14       |
 
-
 ## <a name="using-with_itemindex-for-working-with-a-subset-of-the-array"></a>`with_itemindex`配列のサブセットを操作するためのの使用
 
 <!-- csl: https://help.kusto.windows.net/Samples -->
@@ -156,14 +155,14 @@ _data
 | project index, element
 ```
 
-|インデックス (index)|要素|
+|インデックス|要素|
 |---|---|
 |3|7|
 |4|9|
 |3|8|
 |4|10|
 
-## <a name="using-the-mv-apply-operator-to-sort-the-output-of-makelist-aggregate-by-some-key"></a>演算子を使用して、 `mv-apply` 集計の出力を `makelist` いくつかのキーで並べ替えます。
+## <a name="using-the-mv-apply-operator-to-sort-the-output-of-make_list-aggregate-by-some-key"></a>演算子を使用して、 `mv-apply` 集計の出力を `make_list` いくつかのキーで並べ替えます。
 
 <!-- csl: https://help.kusto.windows.net/Samples -->
 ```kusto
@@ -192,7 +191,6 @@ datatable(command:string, command_time:datetime, user_id:string)
 |user1|[<br>  "ls"、<br>  "mkdir"、<br>  "chmod"、<br>  "dir"、<br>  "pwd"、<br>  ws-rm<br>]|
 |user2|[<br>  "rm"、<br>  pwd<br>]|
 
+## <a name="see-also"></a>関連項目
 
-**参照**
-
-* [mv-展開](./mvexpandoperator.md)演算子。
+* [mv-展開](./mvexpandoperator.md) 演算子。

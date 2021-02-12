@@ -8,12 +8,12 @@ ms.reviewer: rkarlin
 ms.service: data-explorer
 ms.topic: reference
 ms.date: 02/13/2020
-ms.openlocfilehash: a98fe59755e47be8f4f4e53595d25bb260004236
-ms.sourcegitcommit: 09da3f26b4235368297b8b9b604d4282228a443c
+ms.openlocfilehash: b500f5f0e727fde315bea8d77ab60f600f127271
+ms.sourcegitcommit: 4e95f5beb060b5d29c1d7bb8683695fe73c9f7ea
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87349229"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91103403"
 ---
 # <a name="beta_cdf"></a>beta_cdf()
 
@@ -47,7 +47,9 @@ beta_cdf(0.2, 10.0, 50.0)
 
 X < 0 または x > 1 の場合、beta_cdf () は NaN 値を返します。
 
-Α≤0または beta ≤0の場合、beta_cdf () は NaN 値を返します。
+Α≤0または alpha > 1万の場合、beta_cdf () は NaN 値を返します。
+
+Beta ≤0または beta > 1万の場合、beta_cdf () は NaN 値を返します。
 
 ## <a name="examples"></a>例
 
@@ -71,7 +73,7 @@ datatable(x:double, alpha:double, beta:double, comment:string)
 |0.1|-1|20|アルファは 0 <、NaN を生成します|NaN|
 
 
-**参照**
+## <a name="see-also"></a>関連項目
 
 
 * ベータ累積確率密度関数の逆の計算については、「 [beta-inv ()](./beta-invfunction.md)」を参照してください。

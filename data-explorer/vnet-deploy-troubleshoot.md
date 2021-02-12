@@ -5,14 +5,14 @@ author: orspod
 ms.author: orspodek
 ms.reviewer: basaba
 ms.service: data-explorer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/24/2020
-ms.openlocfilehash: b0148267f2245cd00e9bd2891b1a220908c1c16a
-ms.sourcegitcommit: 09da3f26b4235368297b8b9b604d4282228a443c
+ms.openlocfilehash: 6f3831580c998814d956b57a58acc8acd7269abb
+ms.sourcegitcommit: f2f9cc0477938da87e0c2771c99d983ba8158789
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87351660"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89502434"
 ---
 # <a name="troubleshoot-access-ingestion-and-operation-of-your-azure-data-explorer-cluster-in-your-virtual-network"></a>仮想ネットワーク内の Azure Data Explorer クラスターのアクセス、インジェスト、操作に関するトラブルシューティング
 
@@ -69,7 +69,7 @@ ms.locfileid: "87351660"
 
 ### <a name="check-ingestion-health"></a>インジェストの正常性を確認する
 
-[クラスター インジェスト メトリック](using-metrics.md#ingestion-health-and-performance-metrics) が正常な状態であることを確認します。
+[クラスター インジェスト メトリック](using-metrics.md#ingestion-metrics) が正常な状態であることを確認します。
 
 ### <a name="check-security-rules-on-data-source-resources"></a>データ ソース リソースのセキュリティ規則を確認する
 

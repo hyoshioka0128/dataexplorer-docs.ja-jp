@@ -8,12 +8,12 @@ ms.reviewer: rkarlin
 ms.service: data-explorer
 ms.topic: reference
 ms.date: 02/13/2020
-ms.openlocfilehash: bb3f217b1ec0631f533a10433a7be368945667d7
-ms.sourcegitcommit: 09da3f26b4235368297b8b9b604d4282228a443c
+ms.openlocfilehash: 7e587ab08c009516788e3a44b0b8e4a321741d94
+ms.sourcegitcommit: 8853e50a798ee7c78b69bf9822bbf1ced3abe73c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87344537"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91227026"
 ---
 # <a name="series_fill_const"></a>series_fill_const()
 
@@ -23,17 +23,17 @@ ms.locfileid: "87344537"
 
 ## <a name="syntax"></a>構文
 
-`series_fill_const(`*x* `[, `*constant_value* `[,`*missing_value_placeholder*`]])`
+`series_fill_const(`*x* `, `*constant_value* `[,`*missing_value_placeholder*`])`
 * では、すべてのインスタンスが*constant_value*に*missing_value_placeholder*置換された系列*x*が返されます。
 
 ## <a name="arguments"></a>引数
 
 * *x*: 数値の配列である動的配列スカラー式。
-* *constant_value*: 置換する欠損値のプレースホルダーを指定するパラメーター。 既定値は*0*です。 
+* *constant_value*: 欠損値を置換する値。 
 * *missing_value_placeholder*: 省略可能な、置換対象の欠損値のプレースホルダーを指定するパラメーターです。 既定値は `double` (*null*) です。
 
-**メモ**
-* DefaultValue 構文を使用して定数値を格納する系列を作成でき `default = ` *DefaultValue*ます (または、を省略すると0が想定されます)。 詳細については、「[作成シリーズ](make-seriesoperator.md)」を参照してください。
+**ノート**
+* [シリーズを](make-seriesoperator.md)使用して系列を作成する場合は、既定値の0を使用して欠損値を入力します。 また、 `default = ` make series ステートメントで *DefaultValue* を指定することによって、定数値を指定することもできます。
 
 ```kusto
 make-series num=count() default=-1 on TimeStamp from ago(1d) to ago(1h) step 1h by Os, Browser

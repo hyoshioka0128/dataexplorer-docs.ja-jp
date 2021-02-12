@@ -8,12 +8,12 @@ ms.reviewer: rkarlin
 ms.service: data-explorer
 ms.topic: reference
 ms.date: 04/01/2020
-ms.openlocfilehash: 42254e00e629a19dfceeef2d4a6c2d1877400c05
-ms.sourcegitcommit: 283cce0e7635a2d8ca77543f297a3345a5201395
+ms.openlocfilehash: 809088f35567f85444755d89ab30e02fad46abaf
+ms.sourcegitcommit: 313a91d2a34383b5a6e39add6c8b7fabb4f8d39a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "84011552"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90680679"
 ---
 # <a name="callout-policy"></a>Callout ポリシー
 
@@ -22,10 +22,11 @@ Azure Data Explorer クラスターは、さまざまなシナリオで外部サ
 
 コールアウトポリシーはクラスターレベルで管理され、次の種類に分類されます。
 * `kusto`-Azure Data Explorer クロスクラスタークエリを制御します。
-* `sql`- [SQL プラグイン](../query/sqlrequestplugin.md)を制御します。
-
-* `webapi`-他の外部 Web 呼び出しを制御します。
+* `sql` - [SQL プラグイン](../query/sqlrequestplugin.md)を制御します。
+* `cosmosdb` - [CosmosDB プラグイン](../query/cosmosdb-plugin.md)を制御します。
+* `webapi` -他の外部 Web 呼び出しを制御します。
 * `sandbox_artifacts`-サンドボックスプラグイン ([python](../query/pythonplugin.md)  |  [R](../query/rplugin.md)) を制御します。
+* `external_data` - [外部テーブル](../query/schema-entities/externaltables.md) または [externaldata](../query/externaldata-operator.md) 演算子を使用して外部データへのアクセスを制御します。
 
 コールアウトポリシーは、次の要素で構成されます。
 
@@ -37,7 +38,7 @@ Azure Data Explorer クラスターは、さまざまなシナリオで外部サ
 
 この表は、すべての Azure Data Explorer クラスターに事前に構成されている一連の定義済みコールアウトポリシーを示しています。これにより、すべてのサービスを選択できます。
 
-|サービス      |クラウド        |指定  |許可されるドメイン |
+|サービス      |クラウド        |役職  |許可されるドメイン |
 |-------------|-------------|-------------|-------------|
 |Kusto |`Public Azure` |クロスクラスタークエリ |`^[^.]*\.kusto\.windows\.net$` <br> `^[^.]*\.kustomfa\.windows\.net$` |
 |Kusto |`Black Forest` |クロスクラスタークエリ |`^[^.]*\.kusto\.cloudapi\.de$` <br> `^[^.]*\.kustomfa\.cloudapi\.de$` |
@@ -51,7 +52,7 @@ Azure Data Explorer クラスターは、さまざまなシナリオで外部サ
 
 ## <a name="control-commands"></a>管理コマンド
 
-コマンドには[Alldatabasesadmin](access-control/role-based-authorization.md)アクセス許可が必要です。
+コマンドには [Alldatabasesadmin](access-control/role-based-authorization.md) アクセス許可が必要です。
 
 **構成済みのすべてのコールアウトポリシーを表示する**
 

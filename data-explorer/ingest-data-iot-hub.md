@@ -5,14 +5,14 @@ author: orspod
 ms.author: orspodek
 ms.reviewer: tzgitlin
 ms.service: data-explorer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/08/2020
-ms.openlocfilehash: 36c724a001bb4438757316a456fbf85b55691c09
-ms.sourcegitcommit: f7f3ecef858c1e8d132fc10d1e240dcd209163bd
+ms.openlocfilehash: 47fce36f598c334c5e372ccb7bc44d21bd9ff94f
+ms.sourcegitcommit: 97404e9ed4a28cd497d2acbde07d00149836d026
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88201599"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832794"
 ---
 # <a name="ingest-data-from-iot-hub-into-azure-data-explorer"></a>IoT Hub から Azure Data Explorer にデータを取り込む 
 
@@ -25,6 +25,8 @@ ms.locfileid: "88201599"
 [!INCLUDE [data-connector-intro](includes/data-connector-intro.md)]
 
 この記事では、ビッグ データのストリーミング プラットフォームとなる IoT インジェスト サービスである IoT Hub から Azure Data Explorer にデータを取り込む方法について説明します。
+
+IoT Hub から Azure Data Explorer への取り込みに関する一般的な情報については、[IoT Hub への接続](ingest-data-iot-hub-overview.md)に関する記事を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -73,40 +75,56 @@ ms.locfileid: "88201599"
     
     ![テスト データベースの選択](media/ingest-data-iot-hub/select-database.png)
 
-1. **[データ インジェスト]** 、 **[データ接続の追加]** の順に選択します。 その後、フォームに次の情報を入力します。 完了したら、**[作成]** を選択します。
+1. **[データ インジェスト]** 、 **[データ接続の追加]** の順に選択します。
 
-    ![IoT Hub 接続](media/ingest-data-iot-hub/iot-hub-connection.png)
+    :::image type="content" source="media/ingest-data-iot-hub/iot-hub-connection.png" alt-text="IoT Hub へのデータ接続の作成 - Azure Data Explorer":::
 
-    **データ ソース**:
+### <a name="create-a-data-connection"></a>データ接続を作成する
+
+1. フォームに次の情報を入力します。 
+    
+    :::image type="content" source="media/ingest-data-iot-hub/data-connection-pane.png" alt-text="IoT Hub のデータ接続ペイン - Azure Data Explorer":::
 
     **設定** | **フィールドの説明**
     |---|---|
     | データ接続名 | Azure Data Explorer で作成する接続の名前
+    | サブスクリプション |  イベントハブ リソースが配置されているサブスクリプション ID。  |
     | IoT Hub | IoT Hub 名 |
     | 共有アクセス ポリシー | 共有アクセス ポリシーの名前。 読み取りアクセス許可が必要 |
     | コンシューマー グループ |  IoT Hub の組み込みのエンドポイントに定義されているコンシューマー グループ |
     | イベント システム プロパティ | [IoT Hub イベントのシステム プロパティ](/azure/iot-hub/iot-hub-devguide-messages-construct#system-properties-of-d2c-iot-hub-messages)。 システム プロパティを追加する場合は、テーブル スキーマと[マッピング](kusto/management/mappings.md)を[作成](kusto/management/create-table-command.md)または[更新](kusto/management/alter-table-command.md)して、選択したプロパティを含めます。 | | | 
 
-    > [!NOTE]
-    > [手動フェールオーバー](/azure/iot-hub/iot-hub-ha-dr#manual-failover)が発生した場合は、データ接続を再作成する必要があります。
+#### <a name="target-table"></a>ターゲット テーブル
 
-    **ターゲット テーブル**:
+挿入したデータをルーティングするには、"*静的*" と "*動的*" という 2 つのオプションがあります。 この記事では、静的ルーティングを使用し、テーブル名、データ形式、およびマッピングを指定します。 イベントハブ メッセージにデータ ルーティング情報が含まれている場合、このルーティング情報によって既定の設定が上書きされます。
 
-    挿入したデータをルーティングするには、"*静的*" と "*動的*" という 2 つのオプションがあります。 
-    この記事では、静的ルーティングを使用し、テーブル名、データ形式、およびマッピングを指定します。 そのため、 **[My data includes routing info]\(データにルーティング情報が含まれている\)** はオフのままにしておきます。
+1. 次のルーティング設定を入力します。
+    
+    :::image type="content" source="media/ingest-data-iot-hub/default-routing-settings.png" alt-text="既定のルーティング プロパティ - IoT Hub - Azure Data Explorer":::
 
      **設定** | **推奨値** | **フィールドの説明**
     |---|---|---|
-    | テーブル | *TestTable* | **testdb** に作成したテーブル。 |
+    | テーブル名 | *TestTable* | **testdb** に作成したテーブル。 |
     | データ形式 | *JSON* | サポートされている形式は、Avro、CSV、JSON、MULTILINE JSON、ORC、PARQUET、PSV、SCSV、SOHSV、TSV、TXT、TSVE、APACHEAVRO、および W3CLOG です。|
-    | 列マッピング | *TestMapping* | **testdb** に作成した[マッピング](kusto/management/mappings.md)。これにより、受信 JSON データを **testdb** の列名とデータ型にマッピングします。 JSON、MULTILINE JSON、AVRO では必須。その他の形式では省略可能。|
+    | マッピング | *TestMapping* | **testdb** に作成した[マッピング](kusto/management/mappings.md)。これにより、受信データを **testdb** の列名とデータ型にマッピングします。 JSON、MULTILINE JSON、AVRO では必須。その他の形式では省略可能。|
     | | |
 
+    > [!WARNING]
+    > [手動フェールオーバー](/azure/iot-hub/iot-hub-ha-dr#manual-failover)が発生した場合は、データ接続を再作成する必要があります。
+    
     > [!NOTE]
-    > * 動的ルーティングを使用するには、 **[My data includes routing info]\(データにルーティング情報が含まれている\)** を選択します。この場合、[サンプル アプリ](https://github.com/Azure-Samples/event-hubs-dotnet-ingest)のコメントに示されているように、データに必要なルーティング情報が含まれています。 静的プロパティと動的プロパティの両方が設定されている場合、静的プロパティは動的プロパティによってオーバーライドされます。 
+    > * **既定のルーティング設定**をすべて指定する必要はありません。 部分的な設定も受け入れられます。
     > * データ接続の作成後にエンキューされたイベントのみが取り込まれたます。
 
-[!INCLUDE [data-explorer-container-system-properties](includes/data-explorer-container-system-properties.md)]
+1. **［作成］** を選択します
+
+### <a name="event-system-properties-mapping"></a>イベント システム プロパティのマッピング
+
+> [!Note]
+> * システム プロパティは、単一レコードのイベントに対してサポートされています。
+> * `csv` マッピングの場合、レコードの先頭にプロパティが追加されます。 `json` マッピングの場合、ドロップダウン リストに表示される名前に従ってプロパティが追加されます。
+
+テーブルの **[データ ソース]** セクションで **[イベント システムのプロパティ]** を選択した場合は、テーブル スキーマとマッピングに[システム プロパティ](ingest-data-iot-hub-overview.md#system-properties)を含める必要があります。
 
 ## <a name="generate-sample-data-for-testing"></a>テスト用のサンプル データを生成する
 
@@ -177,7 +195,7 @@ ms.locfileid: "88201599"
 
 1. **test-resource-group** で **[リソース グループの削除]** を選択します。
 
-2. 新しいのウィンドウで、削除するリソース グループの名前を入力し、 **[削除]** を選択します。
+1. 新しいのウィンドウで、削除するリソース グループの名前を入力し、 **[削除]** を選択します。
 
 ## <a name="next-steps"></a>次のステップ
 

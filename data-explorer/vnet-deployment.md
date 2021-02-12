@@ -5,20 +5,20 @@ author: orspod
 ms.author: orspodek
 ms.reviewer: basaba
 ms.service: data-explorer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/31/2019
-ms.openlocfilehash: 10c2cf41ae1ab149b6eeffe35f94052069309152
-ms.sourcegitcommit: b8415e01464ca2ac9cd9939dc47e4c97b86bd07a
+ms.openlocfilehash: 74d72ced89b1953b2f7e327656517f1febe4166f
+ms.sourcegitcommit: 803a572ab6f04494f65dbc60a4c5df7fcebe1600
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "88028512"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90714025"
 ---
 # <a name="deploy-azure-data-explorer-cluster-into-your-virtual-network"></a>Azure Data Explorer クラスターを仮想ネットワークにデプロイする
 
 この記事では、Azure Data Explorer クラスターをカスタム Azure Virtual Network にデプロイするときに存在するリソースについて説明します。 この情報は、Virtual Network (VNet) のサブネットにクラスターをデプロイする際に役立ちます。 Azure Virtual Network の詳細については、「[Azure Virtual Network とは](/azure/virtual-network/virtual-networks-overview)」をご覧ください。
 
-   ![VNet の図](media/vnet-deployment/vnet-diagram.png)
+:::image type="content" source="media/vnet-deployment/vnet-diagram.png" alt-text="仮想ネットワーク アーキテクチャの概略図"::: 
 
 Azure Data Explorer では、Virtual Network (VNet) のサブネットへのクラスターのデプロイがサポートされています。 この機能により、次のことが可能になります。
 
@@ -62,7 +62,15 @@ IP アドレスの合計数は次のようになります。
 Azure Data Explorer クラスターをサブネットにデプロイすると、Azure Data Explorer サブネットの基になるリソースを制限しながら、[Event Hub](/azure/event-hubs/event-hubs-about) または [Event Grid](/azure/event-grid/overview) を使用してデータ接続を設定できます。
 
 > [!NOTE]
-> [Storage](/azure/storage/common/storage-introduction) と [Event Hub] で EventGrid セットアップを使用する場合、サブスクリプションで使用されているストレージ アカウントは、信頼できる Azure プラットフォーム サービスを[ファイアウォール構成](/azure/storage/common/storage-network-security)で許可しながら、Azure Data Explorer のサブネットへのサービス エンドポイントを使用してロックすることができます。しかし、イベント ハブでは、信頼できる [Azure プラットフォーム サービス](/azure/event-hubs/event-hubs-service-endpoints)がサポートされないため、サービス エンドポイントを有効にできません。
+> [Storage](/azure/storage/common/storage-introduction) と [[イベント ハブ]](/azure/event-hubs/event-hubs-about) で EventGrid セットアップを使用する場合、サブスクリプションで使用されているストレージ アカウントは、信頼できる Azure プラットフォーム サービスを[ファイアウォール構成](/azure/storage/common/storage-network-security)で許可しながら、Azure Data Explorer のサブネットへのサービス エンドポイントを使用してロックすることができます。しかし、イベント ハブでは、信頼できる [Azure プラットフォーム サービス](/azure/event-hubs/event-hubs-service-endpoints)がサポートされないため、サービス エンドポイントを有効にできません。
+
+## <a name="private-endpoints"></a>プライベート エンドポイント
+
+[プライベート エンドポイント](/azure/private-link/private-endpoint-overview)を使用すると、Azure リソース (Storage/Event Hub/Data Lake Gen 2 など) にプライベートにアクセスし、Virtual Network からのプライベート IP を使用して、リソースを効果的に VNet に取り込むことができます。
+VNet から、データ接続によって使用されるリソース (Event Hub や Storage など) および外部テーブル (Storage、Data Lake Gen 2、SQL Database など) への[プライベート エンドポイント](/azure/private-link/private-endpoint-overview)を作成して、基になるリソースにプライベートにアクセスします。
+
+ > [!NOTE]
+ > プライベート エンドポイントを設定するには、[DNS の構成](/azure/private-link/private-endpoint-dns)が必要です。[Azure プライベート DNS ゾーン](/azure/dns/private-dns-privatednszone)の設定のみがサポートされています。 カスタムの DNS サーバーはサポートされていません。 
 
 ## <a name="dependencies-for-vnet-deployment"></a>VNet デプロイの依存関係
 
@@ -155,14 +163,14 @@ Azure Data Explorer クラスターをサブネットにデプロイすると、
 | カナダ中部 | 168.61.212.201 |
 | カナダ東部 | 168.61.212.201 |
 | インド中部 | 23.99.5.162 |
-| 米国中部 | 168.61.212.201 |
-| 米国中部 EUAP | 168.61.212.201 |
+| 米国中部 | 168.61.212.201、23.101.115.123 |
+| 米国中部 EUAP | 168.61.212.201、23.101.115.123 |
 | 中国東部 2 | 40.73.96.39 |
 | 中国北部 2 | 40.73.33.105 |
 | 東アジア | 168.63.212.33 |
-| 米国東部 | 137.116.81.189 |
-| 米国東部 2 | 137.116.81.189 |
-| 米国東部 2 EUAP | 137.116.81.189 |
+| 米国東部 | 137.116.81.189、52.249.253.174 |
+| 米国東部 2 | 137.116.81.189、104.46.110.170 |
+| 米国東部 2 EUAP | 137.116.81.189、104.46.110.170 |
 | フランス中部 | 23.97.212.5 |
 | フランス南部 | 23.97.212.5 |
 | 東日本 | 138.91.19.129 |
@@ -170,10 +178,10 @@ Azure Data Explorer クラスターをサブネットにデプロイすると、
 | 韓国中部 | 138.91.19.129 |
 | 韓国南部 | 138.91.19.129 |
 | 米国中北部 | 23.96.212.108 |
-| 北ヨーロッパ | 191.235.212.69 
+| 北ヨーロッパ | 191.235.212.69、40.127.194.147 |
 | 南アフリカ北部 | 104.211.224.189 |
 | 南アフリカ西部 | 104.211.224.189 |
-| 米国中南部 | 23.98.145.105 |
+| 米国中南部 | 23.98.145.105、104.215.116.88 |
 | インド南部 | 23.99.5.162 |
 | 東南アジア | 168.63.173.234 |
 | 英国南部 | 23.97.212.5 |
@@ -184,16 +192,16 @@ Azure Data Explorer クラスターをサブネットにデプロイすると、
 | USGov テキサス | 52.238.116.34 |
 | USGov バージニア州 | 23.97.0.26 |
 | 米国中西部 | 168.61.212.201 |
-| 西ヨーロッパ | 23.97.212.5 |
+| 西ヨーロッパ | 23.97.212.5、213.199.136.176 |
 | インド西部 | 23.99.5.162 |
-| 米国西部 | 23.99.5.162 |
-| 米国西部 2 | 23.99.5.162, 104.210.32.14 |
+| 米国西部 | 23.99.5.162、13.88.13.50 |
+| 米国西部 2 | 23.99.5.162、104.210.32.14、52.183.35.124 |
 
 ## <a name="disable-access-to-azure-data-explorer-from-the-public-ip"></a>パブリック IP から Azure Data Explorer へのアクセスを無効にする
 
 パブリック IP アドレスを使用した Azure Data Explorer へのアクセスを完全に無効にする場合は、NSG で別の受信規則を作成します。 この規則にはより低い[優先順位](/azure/virtual-network/security-overview#security-rules) (より大きい数値) が必要です。 
 
-| **用途**   | **ソース** | **ソース サービス タグ** | **ソース ポート範囲**  | **宛先** | **宛先ポート範囲** | **プロトコル ** | **操作** | **優先順位 ** |
+| **用途**   | **ソース** | **ソース サービス タグ** | **ソース ポート範囲**  | **宛先** | **宛先ポート範囲** | **プロトコル** | **操作** | **優先順位** |
 | ---   | --- | --- | ---  | --- | --- | --- | --- | --- |
 | インターネットからのアクセスを無効にする | サービス タグ | インターネット | *  | VirtualNetwork | * | Any | 拒否 | 上記の規則よりも大きい数値 |
 
@@ -221,7 +229,7 @@ wdcp.microsoft.com:443
 login.microsoftonline.com:443
 azureprofilerfrontdoor.cloudapp.net:443
 *.core.windows.net:443
-*.servicebus.windows.net:443
+*.servicebus.windows.net:443,5671
 shoebox2.metrics.nsatc.net:443
 prod-dsts.dsts.core.windows.net:443
 ocsp.msocsp.com:80
@@ -235,6 +243,10 @@ www.microsoft.com:80
 adl.windows.com:80
 crl3.digicert.com:80
 ```
+
+> [!NOTE]
+> [Azure Firewall](/azure/firewall/overview) を使用している場合は、次のプロパティを使用して**ネットワーク ルール**を追加します。 <br>
+> **Protocol**:TCP <br> **[Source Type]\(ソースの種類\)** : IP アドレス <br> **送信元**: * <br> **サービス タグ**:AzureMonitor <br> **宛先ポート**:443
 
 また、非対称ルートの問題を防ぐために、次ホップが*インターネット*である[管理アドレス](#azure-data-explorer-management-ip-addresses)および[正常性監視アドレス](#health-monitoring-addresses)を使用するサブネット上の[ルート テーブル](/azure/virtual-network/virtual-networks-udr-overview)を定義する必要があります。
 
