@@ -509,7 +509,7 @@ Azure 診断設定により、ストレージ アカウントまたはイベン�
 
     **設定** | **推奨値** | **フィールドの説明**
     |---|---|---|
-    | **データ接続名** | *DiagnosticsLogsConnection* | Azure データ エクスプローラーで作成する接続の名前。|
+    | **データ接続名** | *DiagnosticsLogsConnection* | Azure Data Explorer で作成する接続の名前。|
     | **イベント ハブの名前空間** | *AzureMonitoringData* | 以前に選択した、名前空間を識別する名前。 |
     | **イベント ハブ** | *DiagnosticData* | 作成したイベント ハブ。 |
     | **コンシューマー グループ** | *adxpipeline* | 作成したイベント ハブに定義されているコンシューマー グループ。 |
@@ -536,7 +536,7 @@ Azure 診断設定により、ストレージ アカウントまたはイベン�
 
     **設定** | **推奨値** | **フィールドの説明**
     |---|---|---|
-    | **データ接続名** | *ActivityLogsConnection* | Azure データ エクスプローラーで作成する接続の名前。|
+    | **データ接続名** | *ActivityLogsConnection* | Azure Data Explorer で作成する接続の名前。|
     | **イベント ハブの名前空間** | *AzureMonitoringData* | 以前に選択した、名前空間を識別する名前。 |
     | **イベント ハブ** | *insights-operational-logs* | 作成したイベント ハブ。 |
     | **コンシューマー グループ** | *$Default* | 既定のコンシューマー グループ。 必要な場合は、異なるコンシューマー グループを作成できます。 |
